@@ -20,6 +20,26 @@ import { TurboModule, TurboModuleRegistry } from 'react-native';
 
 import type { AdLoaderOptions, AdType, BannerAdLoaderOptions } from '../types';
 
+/**
+ * @public
+ */
+export const AdType = {
+  BANNER: 'banner',
+  INTERSTITIAL: 'interstitial',
+} as const;
+
+/**
+ * @public
+ */
+export type AdType = typeof AdType[keyof typeof AdType];
+
+/**
+ * @internal
+ */
+export function isAdType(value: any): value is AdType {
+  return Object.values(AdType).includes(value);
+}
+
 export interface Spec extends TurboModule {
   loadAd: (
     loaderId: number,
