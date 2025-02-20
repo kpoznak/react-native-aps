@@ -18,7 +18,7 @@
 
 import { TurboModule, TurboModuleRegistry } from 'react-native';
 
-import type { AdLoaderOptions, AdType, BannerAdLoaderOptions } from '../types';
+import type { AdLoaderOptions, BannerAdLoaderOptions } from '../types';
 
 /**
  * @public
