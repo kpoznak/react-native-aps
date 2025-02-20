@@ -1,5 +1,6 @@
 import { APSAds } from '../APSAds';
-import { AdNetwork, MRAIDPolicy } from '../types';
+import { MRAIDPolicy } from '../types';
+import { AdNetwork } from '../types/AdNetworkInfo';
 
 jest.mock('../internal/AdsModule');
 

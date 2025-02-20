@@ -23,22 +23,22 @@ import type { AdLoaderOptions, BannerAdLoaderOptions } from '../types';
 /**
  * @public
  */
-export const AdType = {
+export const AdType = Object.freeze({
   BANNER: 'banner',
   INTERSTITIAL: 'interstitial',
-} as const;
+} as const);
 
 /**
  * @public
  */
-export type AdType = typeof AdType[keyof typeof AdType];
+export type AdType = 'banner' | 'interstitial';
 
 /**
  * @internal
  */
-export function isAdType(value: any): value is AdType {
-  return Object.values(AdType).includes(value);
-}
+// export function isAdType(value: any): value is AdType {
+//   return Object.values(AdType).includes(value);
+// }
 
 export interface Spec extends TurboModule {
   loadAd: (

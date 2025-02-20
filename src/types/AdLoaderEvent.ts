@@ -19,15 +19,15 @@
 /**
  * @public
  */
-export const AdLoaderEvent = {
+export const AdLoaderEvent = Object.freeze({
   SUCCESS: 'onSuccess',
   FAILURE: 'onFailure',
-} as const;
+} as const);
 
 /**
  * @public
  */
-export type AdLoaderEvent = typeof AdLoaderEvent[keyof typeof AdLoaderEvent];
+export type AdLoaderEvent = 'onSuccess' | 'onFailure';
 
 /**
  * @internal

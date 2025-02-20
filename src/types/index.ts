@@ -19,7 +19,7 @@
 export { AdLoaderEvent } from './AdLoaderEvent';
 export { AdLoaderListener } from './AdLoaderListener';
 export { AdLoaderOptions, BannerAdLoaderOptions } from './AdLoaderOptions';
-export { AdNetwork } from './AdNetwork';
+// export { AdNetwork } from './AdNetwork';
 export { AdNetworkInfo } from './AdNetworkInfo';
-export { AdType } from './AdType';
+// export { AdType } from './AdType';
 export { MRAIDPolicy } from './MRAIDPolicy';

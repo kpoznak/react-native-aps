@@ -19,16 +19,16 @@
 /**
  * @public
  */
-export const MRAIDPolicy = {
+export const MRAIDPolicy = Object.freeze({
   NONE: 'NONE',
   DFP: 'DFP',
   CUSTOM: 'CUSTOM',
-} as const;
+} as const);
 
 /**
  * @public
  */
-export type MRAIDPolicy = typeof MRAIDPolicy[keyof typeof MRAIDPolicy];
+export type MRAIDPolicy = 'NONE' | 'DFP' | 'CUSTOM';
 
 /**
  * @internal

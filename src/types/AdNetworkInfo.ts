@@ -16,8 +16,27 @@
  * along with Foobar. If not, see <https://www.gnu.org/licenses/>.
  */
 
-import { AdNetwork, isAdNetwork } from './AdNetwork';
+export const AdNetwork = Object.freeze({
+  GOOGLE_AD_MANAGER: 'GOOGLE_AD_MANAGER',
+  ADMOB: 'ADMOB',
+  AD_GENERATION: 'AD_GENERATION',
+  IRON_SOURCE: 'IRON_SOURCE',
+  MAX: 'MAX',
+  NIMBUS: 'NIMBUS',
+  OTHER: 'OTHER',
+} as const);
 
+/**
+ * @public
+ */
+export type AdNetwork = 'GOOGLE_AD_MANAGER' | 'ADMOB' | 'AD_GENERATION' | 'IRON_SOURCE' | 'MAX' | 'NIMBUS' | 'OTHER';
+
+/**
+ * @internal
+ */
+export function isAdNetwork(value: any): value is AdNetwork {
+  return Object.values(AdNetwork).includes(value);
+}
 /**
  * @public
  */

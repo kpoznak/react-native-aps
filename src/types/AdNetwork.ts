@@ -19,24 +19,24 @@
 /**
  * @public
  */
-export const AdNetwork = {
-  GOOGLE_AD_MANAGER: 'GOOGLE_AD_MANAGER',
-  ADMOB: 'ADMOB',
-  AD_GENERATION: 'AD_GENERATION',
-  IRON_SOURCE: 'IRON_SOURCE',
-  MAX: 'MAX',
-  NIMBUS: 'NIMBUS',
-  OTHER: 'OTHER',
-} as const;
-
-/**
- * @public
- */
-export type AdNetwork = typeof AdNetwork[keyof typeof AdNetwork];
-
-/**
- * @internal
- */
-export function isAdNetwork(value: any): value is AdNetwork {
-  return Object.values(AdNetwork).includes(value);
-}
+// export const AdNetwork = Object.freeze({
+//   GOOGLE_AD_MANAGER: 'GOOGLE_AD_MANAGER',
+//   ADMOB: 'ADMOB',
+//   AD_GENERATION: 'AD_GENERATION',
+//   IRON_SOURCE: 'IRON_SOURCE',
+//   MAX: 'MAX',
+//   NIMBUS: 'NIMBUS',
+//   OTHER: 'OTHER',
+// } as const);
+//
+// /**
+//  * @public
+//  */
+// export type AdNetwork = 'GOOGLE_AD_MANAGER' | 'ADMOB' | 'AD_GENERATION' | 'IRON_SOURCE' | 'MAX' | 'NIMBUS' | 'OTHER';
+//
+// /**
+//  * @internal
+//  */
+// export function isAdNetwork(value: any): value is AdNetwork {
+//   return Object.values(AdNetwork).includes(value);
+// }

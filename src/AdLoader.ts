@@ -27,7 +27,7 @@ import {
   validateAdLoaderOptions,
   validateBannerAdLoaderOptions,
 } from './types/AdLoaderOptions';
-import { AdType } from './types/AdType';
+import { AdType } from './turbomodules/NativeRNAPSAdLoaderModule';
 
 /**
  * @public
